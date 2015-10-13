@@ -5,6 +5,8 @@ class CreateLabels < ActiveRecord::Migration
       t.text :recipient
       t.float :weight
       t.text :dimensions
+
+      t.timestamps
     end
   end
 end
