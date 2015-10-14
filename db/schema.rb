@@ -11,19 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151013232719) do
+ActiveRecord::Schema.define(version: 20151014003117) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "labels", force: :cascade do |t|
-    t.text     "sender"
-    t.text     "recipient"
     t.float    "weight"
-    t.text     "dimensions"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "customs_info"
+    t.string   "sender_name"
+    t.string   "sender_street1"
+    t.string   "sender_street2"
+    t.string   "sender_city"
+    t.string   "sender_state"
+    t.string   "sender_zip"
+    t.string   "recipient_name"
+    t.string   "recipient_street1"
+    t.string   "recipient_street2"
+    t.string   "recipient_city"
+    t.string   "recipient_state"
+    t.string   "recipient_zip"
+    t.float    "width"
+    t.float    "length"
+    t.float    "height"
   end
 
 end

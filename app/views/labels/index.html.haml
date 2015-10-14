@@ -1,0 +1,44 @@
+.h1 Welcome, Create your first shipping label
+
+= form_for :label, url: {controller: 'labels', action: 'create'} do |f|
+
+  =f.label :sender_name
+  =f.text_field :sender_name
+  =f.label :sender_street1
+  =f.text_field :sender_street1
+  =f.label :sender_street2
+  =f.text_field :sender_street2
+  =f.label :sender_city
+  =f.text_field :sender_city
+  =f.label :sender_state
+  =f.text_field :sender_state
+  =f.label :sender_zip
+  =f.text_field :sender_zip
+
+  =f.label :recipient_name
+  =f.text_field :recipient_name
+  =f.label :recipient_street1
+  =f.text_field :recipient_street1
+  =f.label :recipient_street2
+  =f.text_field :recipient_street2
+  =f.label :recipient_city
+  =f.text_field :recipient_city
+  =f.label :recipient_state
+  =f.text_field :recipient_state
+  =f.label :recipient_zip
+  =f.text_field :recipient_zip
+
+
+  =f.label :width
+  =f.text_field :width
+  =f.label :length
+  =f.text_field :length
+  =f.label :height
+  =f.text_field :height
+  =f.label :weight
+  =f.text_field :weight
+
+  =f.submit
+
+
+
