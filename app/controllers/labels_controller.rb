@@ -33,11 +33,4 @@ class LabelsController < ApplicationController
     render 'shipment'
   end
 
-  # def ship
-  #   @label = Label.find(params[:id])
-  #   EasyPost.api_key = ENV['EASYPOST_KEY']
-  #   @shipment = shipment
-  #   redirect_to shipment
-  # end
-
 end
