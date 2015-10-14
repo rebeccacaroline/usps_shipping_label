@@ -1,0 +1,60 @@
+body {
+  background-color: #FFFFF0;
+  font-family: Dosis;
+}
+
+
+header {
+  color: #000099;
+  text-align: center;
+}
+
+.labels {
+  display: flex;
+  webkit-display: flex;
+  align-items: center;
+  flex-direction: column;
+  webkit-align-items: center;
+  webkit-flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+.label {
+  margin: 2em;
+  display: flex;
+  webkit-display: flex;
+  align-items: center;
+  webkit-align-items: center;
+  flex-direction: column;
+  webkit-flex-direction: column;
+}
+
+label {
+  margin: 0.5em;
+  text-align: left;
+}
+
+input {
+  margin-left: 0.75em;
+  padding-left: 0.75em;
+  text-align: right;
+}
+
+.submit input {
+  background-color: rgba(0,0,0,0.15);
+  border: none;
+  padding: 0.5em;
+  border-radius: 10%;
+}
+
+.submit input:hover {
+  background-color: rgba(0,0,0,0.25);
+  border: 0.5px solid rgba(0,0,0,0.75);
+}
